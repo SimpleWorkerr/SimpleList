@@ -4,25 +4,22 @@
     {
         static void Main(string[] args)
         {
-
             MyList<Person> list = new MyList<Person>();
 
-            list.PushBack(new Person() { Age = 1, Name = "A", Sername = "B" });
-            list.PushBack(new Person() { Age = 12, Name = "B", Sername = "B" });
-            list.PushBack(new Person() { Age = 123, Name = "C", Sername = "B" });
-            list.PushBack(new Person() { Age = 1234, Name = "D", Sername = "D" });
+            list.PushBack(new Person() { Age = 1, Name = "A", Sername = "A" });
+            list.PushBack(new Person() { Age = 2, Name = "B", Sername = "B" });
+            list.PushBack(new Person() { Age = 3, Name = "C", Sername = "C" });
+            list.PushBack(new Person() { Age = 4, Name = "D", Sername = "D" });
+            list.PushBack(new Person() { Age = 5, Name = "E", Sername = "E" });
 
-            Console.WriteLine("Display Info");
             list.DisplayInfo();
-            Console.WriteLine("~Display Info");
 
-            Console.WriteLine(list.PopFront());
-            Console.WriteLine(list.PopFront());
-            Console.WriteLine(list.PopFront());
+            list[3] = new Person() { Age = 44, Name = "DD", Sername = "DD" };
 
-            Console.WriteLine("Display Info");
+            Console.WriteLine();
+            Console.WriteLine(list.PopFront());
+            Console.WriteLine();
             list.DisplayInfo();
-            Console.WriteLine("~Display Info");
         }
     }
 }

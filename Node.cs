@@ -8,10 +8,8 @@ namespace SimpleList
 {
     class Node<T>
     {
-        public int Id { get; set; }
         public Node<T>? pNext;
         public T Value { get; set; }
-
 
         public Node(T value, Node<T>? pNext = null)
         {
