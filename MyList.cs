@@ -101,6 +101,8 @@ namespace SimpleList
             }
             Console.WriteLine($"Размер списка: {_listSize}");
         }
-       
+
+        public int ListSize()
+            => _listSize;
     }
 }
